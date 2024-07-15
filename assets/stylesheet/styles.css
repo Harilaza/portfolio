@@ -653,7 +653,7 @@ span {
     border: 2px solid var(--main-color);
     cursor: pointer;
     transition: 0.4s ease-in-out;
-    padding-top: 100px;
+    padding-top: 90px;
     color: var(--main-color);
     width: 320px;
 }
@@ -1072,6 +1072,10 @@ span {
     }
     .services-container {
         grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .service-box {
+        padding-bottom: 25px;
     }
     .certificate-item {
         text-align: center;
