@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/stylesheet/styles.css" >
+</head>
+<body>
+    <div id="preloader">
+        <p class="citation lg:text-7xl text-2xl px-10 text-center font-bold">
+           <span>"Choose a job you love, and you won't have</span>
+        </p>
+        <div>
+            <img class="h-20" src="assets/images/earth.gif" alt="load" />
+        </div>
+        <p
+                class=" citation lg:text-7xl text-2xl px-10 text-center font-bold">
+            <span>to work a day in your life." Conficius.</span>
+        </p>
+    </div>
+    <main>
+        <header class="header">
+            <a href="#home" class="logo">
+                Harilaza
+                <span>S.</span>
+            </a>
+
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#education">Education</a>
+                <a href="#services">Services</a>
+                <a href="#professional">Development</a>
+                <a href="#project">Project</a>
+                <a href="#skills">Skills</a>
+            </nav>
+        </header>
+        <div class="social-side">
+            <a href="https://www.linkedin.com/in/harilaza-andrianantenaina/" target="_blank"><span><b>LinkedIn</b></span><i class='bx bxl-linkedin' ></i></a>
+            <a class="copyButton" onclick="copyToClipboard()"><span>+261385027232</span><i class='bx bxl-whatsapp'></i></a>
+            <a href="mailto:harilaza.andria05@gmail.com"><span>Send Mail</span><i class='bx bxl-gmail' ></i></a>
+            <a href="https://www.facebook.com/yarlaz.andrianantenaina" target="_blank"><span>Facebook</span><i class='bx bxl-facebook' ></i></a>
+        </div>
+
+        <div class="cv-btn-container">
+            <button class="cv-btn">CV</button>
+            <div class="element-container">
+                <span class="element"><img class="flag" src="assets/images/en.png" alt="en"></span>
+                <span onclick="downloadCV()"  class="element"><img class="flag" src="assets/images/fr.png" alt="fr"></span>
+            </div>
+        </div>
+
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1><span>Hello world,</span></h1>
+                <h3 class="text-animation">
+                    I'm
+                    <span></span>
+                </h3>
+                <div class="stacks">
+                    <span>Technical Stacks: </span>
+                    <i class='bx bxl-angular' ></i>
+                    <i class='bx bxl-react'></i>
+                    <i class='bx bxl-nodejs'></i>
+                    <i class='bx bxl-php' ></i>
+                    <i class='bx bxl-spring-boot'></i>
+                </div>
+                <p class="intro">
+                    As a software engineer, I am passionate about crafting high-quality projects.
+                    I specialize in software architecture, leveraging robust approaches like <span>Hexagonal Architecture</span>
+                    and <span>Domain-Driven Design (DDD)</span>. I thrive on tackling complex problem-solving challenges,
+                    constantly striving to optimize and enhance technical solutions.
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/harilaza-andrianantenaina/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://github.com/Harilaza" target="_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="mailto:harilaza.andria05@gmail.com"><i class='bx bxl-gmail' ></i></a>
+                    <a href="https://www.facebook.com/yarlaz.andrianantenaina" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                </div>
+                <div class="btn-group">
+                    <a href="https://www.google.com/maps?q=-21.455037699673692,47.094156328637766" target="_blank" class="btn"><i class='bx bxs-edit-location'></i> Fianarantsoa-MG</a>
+                    <a id="copyButton" class="btn copyButton" onclick="copyToClipboard()"><i class='bx bxl-whatsapp'></i><span> +261 38 50 272 32</span></a>
+                </div>
+            </div>
+            <div class="home-img">
+                <img src="assets/images/profile2.png" alt="image">
+            </div>
+        </section>
+
+        <section class="education" id="education">
+            <h2 class="heading"><span>Education</span></h2>
+
+            <div class="timeline-items">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                    </div>
+                    <div class="timeline-date">
+                        <span>2023-2024</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Ecole Nationale d'Informatique (ENI)-Fianarantsoa-MG</h3>
+                        <p>
+                            Professional <span>Master's Degree</span> in Software and Database Engineering<br>
+                            Learning the basics of data science, software architecture, software engineering principles, and databases.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                    </div>
+                    <div class="timeline-date">
+                        <span>2019-2023</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Ecole Nationale d'Informatique (ENI)-Fianarantsoa-MG</h3>
+                        <p>
+                            Professional <span>Bachelor's Degree</span> in Software and Database Engineering<br>
+                            Learning the basics of web development, data structures, and algorithms.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                    </div>
+                    <div class="timeline-date">
+                        <span>2018</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>CONDORCET-Lycée "Les petits Lascars",Tana 103-MG</h3>
+                        <p>
+                            Bacc, scientific option (C)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <h2 class="heading"><span>Services</span></h2>
+
+            <div class="services-container">
+                <div class="service-box">
+                    <div class="service-info">
+                        <h4><span>Frontend Development</span></h4>
+                        <p>
+                            I design and develop interactive and aesthetic user interfaces,
+                            ensure compatibility and performance across various devices and browsers,
+                            integrate with backend APIs, and optimize user experience in collaboration with UX designers.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-info">
+                        <h4><span>Backend Development</span></h4>
+                        <p>
+                            I design and maintain databases,
+                            develop business logic and APIs, ensure authentication and security,
+                            optimize performance, architect scalable and well-structured systems,
+                            and collaborate with frontend teams for seamless integration.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-info">
+                        <h4><span>Mobile Development</span></h4>
+                        <p>
+                            Specializing in developing interactive and intuitive mobile apps,
+                            striving to push the boundaries of technology. With a passion for innovation,
+                            I ensure every line of code contributes to exceptional user experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="professional" id="professional">
+            <h2 class="heading"><span>Development Experience</span></h2>
+
+            <div class="timeline-items">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                    </div>
+                    <div class="timeline-date">
+                        <span>December 2023 - ...</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>JavaScript Developer Consultant at Relia.</h3>
+                        <p>
+                            Implemented a mobile application named 'PokerApply': social network for poker players.
+                        </p>
+                        <div class="professional-tech">
+                            <h3>React - React Native</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                    </div>
+                    <div class="timeline-date">
+                        <span>October 2023</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Hack IT first edition (Inter-University of Fianarantsoa)</h3>
+                        <p>
+                            <span>Silver medal (2nd) :</span> best project of the competition. The second place is
+                            caused by bad dress presentation.
+                        </p>
+                        <div class="professional-tech">
+                            <h3>React - NestJS</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                    </div>
+                    <div class="timeline-date">
+                        <span>February 2023</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Devhunt second edition (Intern hackathon of E.N.I)</h3>
+                        <p>
+                            <span>Silver medal (2nd) :</span> Second Team representing E.N.I at the Inter-University Hackathon
+                        </p>
+                        <div class="professional-tech">
+                            <h3>React - Laravel - NodeJS</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                    </div>
+                    <div class="timeline-date">
+                        <span>October 2022</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Weekly Coding Challenge(W.C.C)</h3>
+                        <p>
+                            <span>Bronze medal (3rd) </span> in the development category at the WCC 2022 competition organized by Techzara.
+                        </p>
+                        <div class="professional-tech">
+                            <h3>React - Laravel</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                    </div>
+                    <div class="timeline-date">
+                        <span>June 2022 - November 2023 : 1 year 5 months</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Web Developer at ARATO - Fianarantsoa</h3>
+                        <p>
+                            Developing web application :<br>
+                            - For Zomatel Hotel: Room and accommodation booking management application:
+                            allowing to make a reservation and view these reservations,
+                            change the status of the reservation when the guest has arrived,
+                            or left, transfer a guest to another room, calculate the turnover.<br>
+                            - For an individual : Car location management : allowing client to rent a car for fixed term,
+                            monitor fuel consumption and calculate turnover, manage cars, add, modify and change rental rate.
+                        </p>
+                        <div class="professional-tech">
+                            <h3>Angular - Laravel - NestJS</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                    </div>
+                    <div class="timeline-date">
+                        <span> April 2022 - June 2022 : 3 months</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Intern at ARATO - Fianarantsoa</h3>
+                        <p>
+                            Developing web application for footbal association named : "Vas-y Boaikely" to show their activities
+                            and to manage a match calendar and match results, to list their players.
+                        </p>
+                        <div class="professional-tech">
+                            <h3>Angular - Laravel</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project" id="project">
+            <div class="project-box">
+                <h2 class="heading"><span>Personal Project</span></h2>
+
+                <div class="wrapper">
+                    <div class="project-item">
+                        <i class='bx bx-image'></i>
+                        <h2><span>Tic Tac Toe - VS browser</span></h2>
+                        <p>
+                            When you have nothing to do or no friends around, you can play tic-tac-toe with your browser.
+                        </p>
+                        <div class="project-tech">
+                            <h3>Angular (not deployed)</h3>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="assets/images/portfolio.png" alt="img"/>
+                        <h2><span>My Portfolio</span></h2>
+                        <p>
+                            To illustrate who I am and what I do, talking about my skills and experiences.
+                        </p>
+                        <div class="project-tech">
+                            <h3>HTML/CSS - Javascript</h3>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <i class='bx bx-image'></i>
+                        <h2><span>Not finish</span></h2>
+                        <p>
+                            Ongoing development project.
+                        </p>
+                        <div class="project-tech">
+                            <h3>Angular - Spring boot</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2 class="heading"><span>Skills</span></h2>
+            <div class="skills-container">
+                <div class="hexagon-container first">
+                    <div class="hexagon">
+                        <i class='bx bxl-angular' ></i>
+                        <h3>Angular</h3>
+                    </div>
+                    <div class="hexagon">
+                        <i class='bx bxl-react'></i>
+                        <h3>React</h3>
+                    </div>
+                </div>
+                <div class="hexagon-container second">
+                    <div class="hexagon">
+                        <i class='bx bxl-php' ></i>
+                        <h3>PHP Laravel</h3>
+                    </div>
+                    <div class="hexagon">
+                        <i class='bx bxl-nodejs'></i>
+                        <h3>Node/NestJS</h3>
+                    </div>
+                    <div class="hexagon">
+                        <i class='bx bxl-spring-boot'></i>
+                        <h3>Spring boot</h3>
+                    </div>
+                </div>
+                <div class="hexagon-container third">
+                    <div class="hexagon">
+                        <i class='bx bxl-git' ></i>
+                        <h3>Git</h3>
+                    </div>
+                    <div class="hexagon">
+                        <i class='bx bxl-gitlab' ></i>
+                        <h3>Gitlab</h3>
+                    </div>
+                    <div class="hexagon">
+                        <i class='bx bxl-github' ></i>
+                        <h3>Github</h3>
+                    </div>
+                    <div class="hexagon">
+                        <i class='bx bxl-docker' ></i>
+                        <h3>Docker</h3>
+                    </div>
+                </div>
+                <div class="hexagon-container fourth">
+                    <div class="hexagon">
+                        <i class='bx bx-data' ></i>
+                        <h3>MySQL</h3>
+                    </div>
+                    <div class="hexagon">
+                        <i class='bx bxl-postgresql' ></i>
+                        <h3>PostgreSql</h3>
+                    </div>
+                    <div class="hexagon">
+                        <i class='bx bxl-mongodb' ></i>
+                        <h3>MongoDB</h3>
+                    </div>
+                </div>
+                <div class="hexagon-container fifth">
+                    <div class="hexagon">
+                        <i class='bx bxl-tailwind-css' ></i>
+                        <h3>Tailwindcss</h3>
+                    </div>
+                    <div class="hexagon">
+                        <i class='bx bxl-trello' ></i>
+                        <h3>Trello</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive-skills-container">
+                <div class="responsive-hexagon">
+                    <i class='bx bxl-angular' ></i>
+                    <h3>Angular</h3>
+                </div>
+                <div class="responsive-hexagon">
+                    <i class='bx bxl-react'></i>
+                    <h3>React</h3>
+                </div>
+                <div class="responsive-hexagon">
+                    <i class='bx bxl-php' ></i>
+                    <h3>PHP Laravel</h3>
+                </div>
+                <div class="responsive-hexagon">
+                    <i class='bx bxl-nodejs'></i>
+                    <h3>Node/NestJS</h3>
+                </div>
+                <div class="responsive-hexagon">
+                    <i class='bx bxl-spring-boot'></i>
+                    <h3>Spring boot</h3>
+                </div>
+                <div class="responsive-hexagon">
+                    <i class='bx bxl-git' ></i>
+                    <h3>Git</h3>
+                </div>
+                <div class="responsive-hexagon">
+                    <i class='bx bxl-gitlab' ></i>
+                    <h3>Gitlab</h3>
+                </div>
+                <div class="responsive-hexagon">
+                    <i class='bx bxl-github' ></i>
+                    <h3>Github</h3>
+                </div>
+                <div class="responsive-hexagon">
+                    <i class='bx bxl-docker' ></i>
+                    <h3>Docker</h3>
+                </div>
+                <div class="responsive-hexagon">
+                    <i class='bx bx-data' ></i>
+                    <h3>MySQL</h3>
+                </div>
+                <div class="responsive-hexagon">
+                    <i class='bx bxl-postgresql' ></i>
+                    <h3>PostgreSql</h3>
+                </div>
+                <div class="responsive-hexagon">
+                    <i class='bx bxl-mongodb' ></i>
+                    <h3>MongoDB</h3>
+                </div>
+                <div class="responsive-hexagon">
+                    <i class='bx bxl-tailwind-css' ></i>
+                    <h3>Tailwindcss</h3>
+                </div>
+                <div class="responsive-hexagon">
+                    <i class='bx bxl-trello' ></i>
+                    <h3>Trello</h3>
+                </div>
+            </div>
+            <div class="certificate">
+                <div class="certificate-item">
+                    <h3><span>Certifications</span></h3>
+                    <a href="https://skillvalue.com/en/user/certificate/qUMHrviVmQDdj09IkQvvJIUn2qQ2UNBwvM4xQwzAJD6skIubREDh55MfIEsH" target="_blank">Javascript<span>(Pentalog)</span> </a> |
+                    <a href="https://www.sololearn.com/fr/certificates/CC-ZHQQXUVL" target="_blank">Angular<span>(Sololearn)</span></a> |
+                    <a href="https://www.sololearn.com/fr/certificates/CC-Q2ARRMLK" target="_blank">Javascript<span>(Sololearn)</span></a> |
+                    <a href="https://www.hackerrank.com/certificates/f212f293c096" target="_blank">NodeJS<span>(Hackerrank)</span></a> |
+                    <a href="https://www.hackerrank.com/certificates/fae2c8498599" target="_blank">Rest_API<span>(Hackerrank)</span></a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="contact" id="contact">
+                <h2 class="heading">Contact <span>Me</span></h2>
+                <form action="">
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="text" placeholder="your full name" >
+                        </div>
+                        <div class="input-box">
+                            <input type="email" placeholder="your e-mail" >
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="your number" >
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="subject" >
+                        </div>
+
+                    </div>
+                    <div class="input-group-2">
+                        <textarea name="" id="message" cols="35" rows="9" placeholder="your message" ></textarea>
+                        <input type="submit" value="send Message" class="btn" >
+                    </div>
+                </form>
+            </div>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/harilaza-andrianantenaina/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/Harilaza" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="mailto:harilaza.andria05@gmail.com"><i class='bx bxl-gmail' ></i></a>
+                <a href="https://www.facebook.com/yarlaz.andrianantenaina" target="_blank"><i class='bx bxl-facebook' ></i></a>
+            </div>
+
+            <ul class="list">
+                <li>
+                    <a>FAQ</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#home">About Me</a>
+                </li>
+                <li>
+                    <a href="#project">Project</a>
+                </li>
+                <li>
+                    <a href="#professional">Experience</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+            </ul>
+            <p class="copyright">
+                &copy; Harilaza Sarobidy ANDRIANANTENAINA | All right reserved 2024
+            </p>
+        </footer>
+    </main>
+    <script src="assets/javascript/index.js" ></script>
+</body>
+</html>
