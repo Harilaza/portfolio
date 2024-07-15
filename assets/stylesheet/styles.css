@@ -641,7 +641,7 @@ span {
 .services-container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    align-items: center;
+    justify-items: center;
     gap: 2.5rem;
 }
 
@@ -988,6 +988,7 @@ span {
     .services-container {
         padding-bottom: 7rem;
         grid-template-columns: repeat(2,1fr);
+        justify-items: center;
         margin: 0 5rem;
     }
 }
