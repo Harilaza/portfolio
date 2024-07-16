@@ -7,6 +7,15 @@
     <link rel="icon" href="favicon.png" type="image/png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/stylesheet/styles.css" >
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('whhKBAzAu77QpbJQs');
+        })();
+    </script>
 </head>
 <body>
     <div id="preloader">
@@ -47,7 +56,7 @@
         </div>
 
         <div class="cv-btn-container">
-            <button class="cv-btn">CV</button>
+            <button class="cv-btn"><span>CV</span></button>
             <div class="element-container">
                 <span class="element"><img class="flag" src="assets/images/en.png" alt="en"></span>
                 <span onclick="downloadCV()"  class="element"><img class="flag" src="assets/images/fr.png" alt="fr"></span>
@@ -481,25 +490,25 @@
         <footer class="footer">
             <div class="contact" id="contact">
                 <h2 class="heading">Contact <span>Me</span></h2>
-                <form action="">
+                <form action="" onsubmit="sendMail(event)">
                     <div class="input-group">
                         <div class="input-box">
-                            <input type="text" placeholder="your full name" >
+                            <input id="name" type="text" placeholder="your full name" >
                         </div>
                         <div class="input-box">
-                            <input type="email" placeholder="your e-mail" >
+                            <input id="email" type="email" placeholder="your e-mail" >
                         </div>
                         <div class="input-box">
-                            <input type="text" placeholder="your number" >
+                            <input id="number" type="text" placeholder="your number" >
                         </div>
                         <div class="input-box">
-                            <input type="text" placeholder="subject" >
+                            <input id="subject" type="text" placeholder="subject" >
                         </div>
 
                     </div>
                     <div class="input-group-2">
                         <textarea name="" id="message" cols="35" rows="9" placeholder="your message" ></textarea>
-                        <input type="submit" value="send Message" class="btn" >
+                        <input id="submit" type="submit" value="send Message" class="btn" >
                     </div>
                 </form>
             </div>

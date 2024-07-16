@@ -82,6 +82,35 @@ setTimeout(function() {
     });
 }, 2000);
 
+const sendMail = (event) => {
+    event.preventDefault();
+    document.getElementById('submit').value = 'sending...';
+
+    let formData = {
+        to_name: 'Engineer',
+        from_name: document.getElementById('name').value,
+        from_email: document.getElementById('email').value,
+        from_number: document.getElementById('number').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value
+    };
+
+    emailjs.send("service_4xq3988", "template_8ifrjln", formData)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('Email envoyé avec succès !');
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('number').value = '';
+            document.getElementById('subject').value = '';
+            document.getElementById('message').value = '';
+            document.getElementById('submit').value = 'Send Message';
+        }, function(error) {
+            console.log('FAILED...', error);
+            alert('Échec de l\'envoi de l\'email.');
+        });
+}
+
 
 
 
