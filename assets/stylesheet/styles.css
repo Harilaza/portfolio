@@ -695,7 +695,6 @@ span {
 .service-box {
     position: relative;
     background-color: var(--bg-color);
-    min-height: 52dvh;
     border-radius: 3rem;
     border: 2px solid var(--main-color);
     cursor: pointer;
@@ -703,6 +702,7 @@ span {
     padding-top: 90px;
     color: var(--main-color);
     width: 33rem;
+    padding-bottom: 90px;
 }
 
 .service-box:hover {
@@ -1123,8 +1123,11 @@ span {
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
     }
+    .service-box {
+        width: 90dvw;
+    }
     .service-info h4 {
-        font-size: 2.3rem;
+        font-size: 2.1rem;
     }
     .certificate-item {
         text-align: center;
