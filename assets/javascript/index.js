@@ -7,6 +7,11 @@ let whatsappBtn = document.querySelector('.copyButton span');
 let socialSide = document.querySelector('.social-side');
 let preloader = document.querySelector('#preloader');
 let main = document.querySelector('main');
+let notifications = document.querySelector('.notifications');
+let success = document.querySelector('.success');
+let error = document.querySelector('.error');
+let information = document.querySelector('.information');
+
 
 window.onscroll = () => {
     sections.forEach(section => {
@@ -40,6 +45,7 @@ menuIcon.onclick = () => {
 }
 
 const copyToClipboard = () => {
+    information.style.animation = 'notification 4s';
     let numberToCopy = '+261385027232';
 
     let tempInput = document.createElement('textarea');
@@ -97,8 +103,8 @@ const sendMail = (event) => {
 
     emailjs.send("service_4xq3988", "template_8ifrjln", formData)
         .then(function(response) {
+            success.style.animation = 'notification 5s';
             console.log('SUCCESS!', response.status, response.text);
-            alert('Email envoyé avec succès !');
             document.getElementById('name').value = '';
             document.getElementById('email').value = '';
             document.getElementById('number').value = '';
@@ -107,7 +113,7 @@ const sendMail = (event) => {
             document.getElementById('submit').value = 'Send Message';
         }, function(error) {
             console.log('FAILED...', error);
-            alert('Échec de l\'envoi de l\'email.');
+            error.style.animation = 'notification 5s';
         });
 }
 
