@@ -678,6 +678,7 @@ span {
 .services {
     background: var(--bg-color);
     color: black;
+    width: 100%;
 }
 
 .services h2 {
@@ -701,8 +702,6 @@ span {
     transition: 0.4s ease-in-out;
     padding-top: 90px;
     color: var(--main-color);
-    width: 33rem;
-    padding-bottom: 90px;
 }
 
 .service-box:hover {
@@ -724,10 +723,9 @@ span {
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-height: 200px;
     justify-content: left;
     align-items: baseline;
-    padding: 4rem 4rem;
+    padding: 4rem 2rem;
 }
 
 .service-info h4 {
@@ -739,7 +737,6 @@ span {
 .service-info p {
     font-size: 1.6rem;
     font-weight: 600;
-    max-height: 100px;
     line-height: 1.7;
     margin: auto;
 }
@@ -1122,9 +1119,6 @@ span {
     .services-container {
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
-    }
-    .service-box {
-        width: 90dvw;
     }
     .service-info h4 {
         font-size: 2.1rem;
