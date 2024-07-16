@@ -325,14 +325,14 @@ span {
     border-radius: 50px;
     position: fixed;
     bottom: 25px;
-    left: -300px;
+    left: -500px;
     z-index: 15;
     background-color: var(--bg-color);
 }
 
 @keyframes notification {
     0% {
-        left: -300px;
+        left: -500px;
     }
     40% {
         left: 25px;
@@ -341,7 +341,7 @@ span {
     left: 25px;
     }
     100% {
-        left: -300px;
+        left: -500px;
     }
 
 }

@@ -63,15 +63,16 @@ const copyToClipboard = () => {
     setTimeout(function() {
         whatsappNumber.textContent = '+261 38 50 272 32';
         whatsappBtn.textContent = '+261385027232';
-    }, 2000);
+        information.style.animation = '';
+    }, 4000);
 }
 
-const downloadCV = () =>{
-    let filePath = 'assets/cv/Andrianantenaina-Harilaza.pdf';
+const downloadCV = (lang) =>{
+    let filePath = lang === 'EN' ? 'assets/cv/Andrianantenaina-Harilaza-EN.pdf' : 'assets/cv/Andrianantenaina-Harilaza-FR.pdf' ;
     let a = document.createElement('a');
     a.style.display = 'none';
     a.href = filePath;
-    a.download = 'Andrianantenaina-Harilaza.pdf';
+    a.download = `Andrianantenaina-Harilaza-${lang}.pdf`;
 
     document.body.appendChild(a);
 
@@ -90,6 +91,8 @@ setTimeout(function() {
 
 const sendMail = (event) => {
     event.preventDefault();
+    success.style.animation = '';
+    error.style.animation = '';
     document.getElementById('submit').value = 'sending...';
 
     let formData = {
