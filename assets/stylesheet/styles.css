@@ -760,7 +760,7 @@ span {
     margin-bottom: 5rem;
 }
 
-.project-item i {
+.project-item .no-image {
     font-size: 20rem;
     color: var(--main-color);
 }
