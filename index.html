@@ -534,21 +534,21 @@
                 <form action="" onsubmit="sendMail(event)">
                     <div class="input-group">
                         <div class="input-box">
-                            <input id="name" type="text" placeholder="your full name" >
+                            <input id="name" type="text" placeholder="your full name" required>
                         </div>
                         <div class="input-box">
-                            <input id="email" type="email" placeholder="your e-mail" >
+                            <input id="email" type="email" placeholder="your e-mail" required >
                         </div>
                         <div class="input-box">
-                            <input id="number" type="text" placeholder="your number" >
+                            <input id="text" type="text" placeholder="your number" required>
                         </div>
                         <div class="input-box">
-                            <input id="subject" type="text" placeholder="subject" >
+                            <input id="subject" type="text" placeholder="subject" required>
                         </div>
 
                     </div>
                     <div class="input-group-2">
-                        <textarea name="" id="message" cols="35" rows="9" placeholder="your message" ></textarea>
+                        <textarea name="" id="message" cols="35" rows="9" placeholder="your message" required></textarea>
                         <input id="submit" type="submit" value="send Message" class="btn" >
                     </div>
                 </form>
